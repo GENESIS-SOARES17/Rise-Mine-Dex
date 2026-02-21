@@ -36,13 +36,13 @@ export function Background() {
         <rect width="100%" height="100%" fill="url(#hexagons)" />
       </svg>
 
-      {/* MARCA D'ÁGUA - imagem risemarca.jpg repetida com baixa opacidade */}
+      {/* MARCA D'ÁGUA - imagem rise.png repetida com baixa opacidade */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'url("/risemarca.jpg")',
+          backgroundImage: 'url("/rise.png")',
           backgroundRepeat: 'repeat',
-          backgroundSize: '200px 200px', // Ajuste o tamanho conforme preferir
+          backgroundSize: '150px 150px', // Ajuste o tamanho conforme preferir
           opacity: 0.1, // Ajuste a opacidade (0 = invisível, 1 = totalmente visível)
         }}
       />
