@@ -1,0 +1,153 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\MeusProjetos\\Rise  Mine  Dex\\contracts\\FeePool.sol": {
+      "lastModificationDate": 1771682490408,
+      "contentHash": "f880e75561b0253fcae057b28cd3e60d",
+      "sourceName": "contracts/FeePool.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "FeePool"
+      ]
+    },
+    "D:\\MeusProjetos\\Rise  Mine  Dex\\contracts\\IERC20.sol": {
+      "lastModificationDate": 1771682490407,
+      "contentHash": "80ef62a1c3068d8fb2d445320e35cc48",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\MeusProjetos\\Rise  Mine  Dex\\contracts\\PredictionMarket.sol": {
+      "lastModificationDate": 1771682490411,
+      "contentHash": "5ec4c2a886a5a7c3416f6bdf353ab179",
+      "sourceName": "contracts/PredictionMarket.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./FeePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "PredictionMarket"
+      ]
+    },
+    "D:\\MeusProjetos\\Rise  Mine  Dex\\contracts\\MiniAMM.sol": {
+      "lastModificationDate": 1771682490410,
+      "contentHash": "539b89e315bc8b6490f3555e25074104",
+      "sourceName": "contracts/MiniAMM.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./FeePool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "MiniAMM"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+npx hardhat run scripts/updatePrices.js --network riseTestnet
+console.log("Preço USDT:", (await prediction.getPrice(tokens.USDT))[0].toString());
+console.log("Preço USDC:", (await prediction.getPrice(tokens.USDC))[0].toString());
+console.log("Preço RISE:", (await prediction.getPrice(tokens.RISE))[0].toString());
+const predictionAddress = "0x48eCef05a0439468576A2db561A07173677ab55c";

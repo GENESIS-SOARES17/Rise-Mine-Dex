@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  @apply bg-rise-darker text-white antialiased;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-rise-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-rise-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-rise-primary;
+}
+
+/* Glass morphism */
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+.glass-dark {
+  @apply bg-black/20 backdrop-blur-xl border border-white/5;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-rise-primary via-rise-secondary to-rise-accent bg-clip-text text-transparent;
+}
+
+/* Neon glow effects */
+.neon-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4), 0 0 40px rgba(139, 92, 246, 0.2);
+}
+
+.neon-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 40px rgba(59, 130, 246, 0.2);
+}
+
+.neon-green {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4), 0 0 40px rgba(16, 185, 129, 0.2);
+}
+
+/* Theme variations */
+.theme-dark {
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --text-primary: #FFFFFF;
+  --accent: #8B5CF6;
+}
+
+.theme-light {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --text-primary: #0F172A;
+  --accent: #8B5CF6;
+}
+
+.theme-neon {
+  --bg-primary: #000000;
+  --bg-secondary: #0A0A0A;
+  --text-primary: #00FF88;
+  --accent: #FF00FF;
+}
+
+/* Animated background */
+.animated-bg {
+  background: linear-gradient(-45deg, #0F172A, #1E1B4B, #0F172A, #1E293B);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Floating particles effect */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Input styles */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
